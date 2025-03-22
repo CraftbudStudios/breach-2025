@@ -32,19 +32,26 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-### 5. Populate the Database (Optional)
+### 5. Create a Superuser
+To create an admin user for managing the application:
+```bash
+python manage.py createsuperuser
+```
+Follow the prompts to set up a username, email, and password.
+
+### 6. Populate the Database (Optional)
 If you want to add test data:
 ```bash
 python populate_db.py
 ```
 
-### 6. Run the Development Server
+### 7. Run the Development Server
 ```bash
 python manage.py runserver
 ```
 By default, the application will be available at `http://127.0.0.1:8000/`
 
-### 7. Running Tests
+### 8. Running Tests
 ```bash
 python manage.py test
 ```
@@ -67,6 +74,3 @@ python manage.py test
 ├── generate_test_data.py # Script to generate test data
 └── populate_db.py      # Script to populate the database
 ```
-
-
-
