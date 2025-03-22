@@ -20,3 +20,6 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+admin.site.site_header = "FraudX Security Portal"
+admin.site.site_title = "FraudX Security Portal"
+admin.site.index_title = "Welcome to FraudX Security Portal"

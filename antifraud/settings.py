@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-c@4q&yr48f@)2f&ksdx3lnxn&m%zhq&ei4qd=4oe_s@mdl5)o+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -122,3 +121,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'main.BankUser'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+# Security settings
+SESSION_COOKIE_AGE = 900  # 15 minutes
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
