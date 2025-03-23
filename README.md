@@ -56,21 +56,19 @@ By default, the application will be available at `http://127.0.0.1:8000/`
 python manage.py test
 ```
 
-## Project Structure
+
+# Frontend Setup Instructions
+
+## How to Use
+
+1. **Unzip the Frontend Files**  
+   Extract the frontend project into the  directory.
+
+2. **Install Dependencies**  
+   Navigate to the frontend folder and run:  
+   ```sh
+   npm install
+
 ```
-.
-├── antifraud/          # Main Django project settings and configurations
-│   ├── settings.py     # Django settings file
-│   ├── urls.py         # URL routing configuration
-│   ├── wsgi.py         # WSGI entry point for deployment
-├── main/               # Application logic (models, views, etc.)
-│   ├── models.py       # Database models
-│   ├── views.py        # View functions
-│   ├── urls.py         # Application-specific URL patterns
-│   ├── admin.py        # Django admin configurations
-│   ├── migrations/     # Database migrations
-├── db.sqlite3          # SQLite database (if used)
-├── manage.py           # Django's management script
-├── generate_test_data.py # Script to generate test data
-└── populate_db.py      # Script to populate the database
+npx run dev
 ```
